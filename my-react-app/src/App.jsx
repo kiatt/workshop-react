@@ -1,4 +1,5 @@
 import './App.css'
+import Datepicker from './components/Datepicker'
 
 function App() {
   return (
@@ -10,9 +11,18 @@ function App() {
         <p className="text-lg text-gray-600 mb-4">
           Welcome to your React app built with Vite and styled with Tailwind CSS!
         </p>
-        <p className="text-gray-500">
+        <p className="text-gray-500 mb-6">
           This is a simple Hello World page created following the Vite guide with Tailwind CSS integration.
         </p>
+        
+        {/* Datepicker Component */}
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Select a date:
+          </label>
+          <Datepicker />
+        </div>
+        
         <div className="mt-6">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
             Get Started
